@@ -1,7 +1,9 @@
 function About (){
 
     return(
-        console.log('Hello World')
+        <div>
+            <h1> ABOUT</h1>
+        </div>
     )
 }
 

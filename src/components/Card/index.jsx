@@ -1,5 +1,4 @@
-
-function Home (){
+function Card (){
 
     return(
         <div>
@@ -8,4 +7,4 @@ function Home (){
     )
 }
 
-export default Home
+export default Card
