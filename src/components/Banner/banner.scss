@@ -1,0 +1,33 @@
+@import "../../utils/variables.scss";
+
+
+.banner-img {
+    margin:70px 0 43px 0;
+    position: relative;
+    height: 223px;
+
+    & .banner-box{
+        background: $dark-grey;
+        height: 223px;
+        border-radius: 25px;
+    }
+
+    & img {
+        object-fit: cover;
+        height: 223px;
+        width: 100%;
+        opacity: 0.7;
+        border-radius: 25px;
+
+    }
+
+    & h1 {
+        font-size: 48px;
+        color: $default-white;
+        position: absolute;
+        top: 0;
+        margin:85px 0;
+        width: 100%;
+        text-align: center;
+    }
+}

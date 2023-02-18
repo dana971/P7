@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router,Route, Routes } from "react-router-dom";
 import Home from './pages/Home';
@@ -7,20 +7,21 @@ import About from "./pages/A-Propos";
 import Error404 from "./pages/404";
 import Nav from "./components/Nav/Nav";
 import Footer from "./components/Footer";
+import Card from "./components/Card";
 import "../src/utils/index.scss";
 import "./assets/fonts/Montserrat-Regular.ttf";
+import Banner from "./components/Banner";
 
 
 
- fetch(`/logements.json`)
-     .then((res) => res.json())
-     .then((res)=>console.log(res))
 
 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
         <Nav />
+        <Banner />
+        <Card />
         <Routes>
             < Route path="/" element={<Home />} />
             < Route path="/fiche-logement/:id" element={<FicheLogement />} />
