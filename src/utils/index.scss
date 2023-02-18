@@ -1,0 +1,18 @@
+//Global style
+
+
+//
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat-Regular"),
+    url("../assets/fonts/Montserrat-Regular.ttf") format("ttf");
+}
+
+body{
+    margin :40px auto 0 auto;
+    width: 1440px;
+    //TODO : GESTION FONTS
+    font-family: Montserrat, serif;
+}
+

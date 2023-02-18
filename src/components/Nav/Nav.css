@@ -1,0 +1,19 @@
+nav {
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .nav-buttons {
+  display: flex;
+  gap: 55px;
+}
+nav .nav-buttons a {
+  color: #FF6060;
+  text-decoration: none;
+}
+nav .nav-buttons a:hover {
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=Nav.css.map */
