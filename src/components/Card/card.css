@@ -8,7 +8,6 @@
   row-gap: 50px;
 }
 .card-container .card {
-  height: 340px;
   width: 30%;
   display: flex;
   flex-direction: column;
@@ -28,6 +27,7 @@
   z-index: -1;
   position: relative;
   width: 100%;
+  object-fit: cover;
 }
 .card-container .card span {
   position: absolute;
