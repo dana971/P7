@@ -1,8 +1,15 @@
+import "./A-propos.scss"
+import laVallee from "../../assets/images/img-vallee.png"
+import Dropdown from "../../components/Dropdown"
+
 function About (){
 
     return(
         <div>
-            <h1> ABOUT</h1>
+            <img src={laVallee} className="banner-about" alt="Illustration d'une vallée enneigée"/>
+            <Dropdown/>
+
+
         </div>
     )
 }

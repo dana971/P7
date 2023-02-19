@@ -2,10 +2,24 @@
   font-family: "Montserrat";
   src: local("Montserrat-Regular"), url("../assets/fonts/Montserrat-Regular.ttf") format("truetype");
 }
+html, body {
+  height: 100%;
+}
+
 body {
-  margin: 40px auto 0 auto;
+  margin: 0 auto;
   max-width: 1440px;
   font-family: Montserrat, serif;
+  padding: 0 50px;
+}
+body div#root {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+body div#root div.body-wrapper {
+  flex: 1 0 auto;
+  margin-top: 40px;
 }
 
 /*# sourceMappingURL=index.css.map */

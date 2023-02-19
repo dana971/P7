@@ -8,7 +8,7 @@ function Footer (){
     return(
         <footer className="footer">
             <img src={whiteLogo} alt="logo de l'enseigne kasa en blanc"/>
-            <span className="footer_subtitle">© 2020 Kasa. All rights reserved</span>
+            <span className="footer_subtitle">© 2023 Kasa. All rights reserved</span>
         </footer>
     )
 }

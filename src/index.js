@@ -16,13 +16,15 @@ import "./assets/fonts/Montserrat-Regular.ttf";
 ReactDOM.render(
   <React.StrictMode>
     <Router>
-        <Nav />
-        <Routes>
-            < Route path="/" element={<Home />} />
-            < Route path="/fiche-logement/:id" element={<FicheLogement />} />
-            < Route path="/about" element={<About />} />
-            < Route path="*" element={<Error404 />} />
-        </Routes>
+        <div className="body-wrapper">
+            <Nav />
+            <Routes>
+                < Route path="/" element={<Home />} />
+                < Route path="/fiche-logement/:id" element={<FicheLogement />} />
+                < Route path="/about" element={<About />} />
+                < Route path="*" element={<Error404 />} />
+            </Routes>
+        </div>
         <Footer />
     </Router>
   </React.StrictMode>,

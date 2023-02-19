@@ -11,7 +11,6 @@ function DisplayHouse (){
             .then((res) => res.json())
             .then((houseData) => {
                 setHouses(houseData)
-                console.log(houseData)
             })
             .catch((error) => console.log(error))
     },

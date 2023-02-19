@@ -7,6 +7,8 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-shrink: 0;
+    margin-top: 40px;
     &img{
         margin: 0;
         width: 0;
