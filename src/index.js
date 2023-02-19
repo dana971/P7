@@ -5,10 +5,8 @@ import Home from './pages/Home';
 import FicheLogement from "./pages/Fiche-Logement";
 import About from "./pages/A-Propos";
 import Error404 from "./pages/404";
-import Banner from "./components/Banner";
 import Nav from "./components/Nav/Nav";
 import Footer from "./components/Footer";
-import Card from "./components/Card";
 import "../src/utils/index.scss";
 import "./assets/fonts/Montserrat-Regular.ttf";
 
@@ -19,8 +17,6 @@ ReactDOM.render(
   <React.StrictMode>
     <Router>
         <Nav />
-        <Banner />
-        <Card />
         <Routes>
             < Route path="/" element={<Home />} />
             < Route path="/fiche-logement/:id" element={<FicheLogement />} />

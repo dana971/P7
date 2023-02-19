@@ -1,13 +1,14 @@
-import "../../assets/images/404.svg"
-import {NavLink} from "react-router-dom";
+import errorPicture from "../../assets/images/404.svg"
+import "./404.scss"
+
 
 function Error404 (){
 
     return(
-        <div>
-            <img src="./../assets/images/404.svg" alt="Message d'erreur 404"/>
-            <span>Oups ! La page que vous demandez n'existe pas !</span>
-            <div>Retourner sur la page d'accueil</div>
+        <div className="error-container">
+            <img src={errorPicture} className="error-img" alt="Message d'erreur 404"/>
+            <span className="error-msg">Oups ! La page que vous demandez n'existe pas !</span>
+            <div className="switch-link">Retourner sur la page d'accueil</div>
         </div>
     )
 }

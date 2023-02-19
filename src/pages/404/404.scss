@@ -1,0 +1,26 @@
+@import "./src/utils/variables";
+
+.error-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:$color-primary;
+    margin: 0 auto;
+    margin-top: 170px ;
+
+    & .error-img{
+        max-width: 700px;
+        margin-bottom: 70px;
+    }
+
+    & .error-msg{
+        font-size: 30px;
+        margin-bottom: 150px;
+    }
+
+    & .switch-link{
+        text-decoration-line: underline;
+        font-size: 18px;
+        margin-bottom: 160px;
+    }
+}
