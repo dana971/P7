@@ -3,6 +3,7 @@ import Carrousel from "../../components/Slideshow";
 import {useEffect, useState} from "react";
 import {useParams} from "react-router-dom";
 import HouseInfo from "../../components/House-info";
+import Collapse from "../../components/Collapse";
 
 
 function FicheLogement (){
@@ -29,6 +30,18 @@ function FicheLogement (){
         <div>
             <Carrousel house={house}/>
             <HouseInfo house={house}/>
+            <div className="dropdown-container-short">
+                <Collapse
+                    title={"Description"}
+                    description={house.description}
+                />
+
+                <Collapse
+                    title={"Equipements"}
+                    liste={house.equipments}
+                />
+            </div>
+
         </div>
     )
 }
