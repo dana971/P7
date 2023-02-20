@@ -1,6 +1,18 @@
 @import "./src/utils/variables.scss";
 
-.carrousel-box{
+.carroussel-container{
+    padding-top: 25px;
+}
 
+.carrousel-box {
+    display: flex;
+    justify-content: center;
+    height: 415px;
+    width: 100%;
+}
 
+.carrousel-box img {
+    border-radius: 25px;
+    width: 100%;
+    object-fit: cover;
 }

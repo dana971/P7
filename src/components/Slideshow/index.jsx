@@ -1,10 +1,10 @@
-
+import "./Slideshow.scss"
 
 function Slideshow({house}){
     return(
-        <div className="caroussel-container">
+        <div className="carroussel-container">
             <div className="carrousel-box">
-                <img src={house.cover} alt="Illustration d'une falaise"/>
+                <img src={house.cover} className="carroussel-img" alt="Illustration d'une falaise"/>
             </div>
         </div>
 

@@ -1,0 +1,48 @@
+@import "./src/utils/variables.scss";
+
+.house-info-title, .house-info-subtitle , .house-info-host-name {
+    color:$color-primary;
+    margin-top: 0;
+}
+
+.house-info-subtitle , .house-info-host-name{
+    font-size: 18px;
+}
+
+.house-info-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.host-picture{
+    border-radius: 70px ;
+    height: 100px;
+}
+
+.house-info-host-box{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+
+
+ul.tags-container{
+    display:flex;
+    padding: 0;
+    & li{
+        all: unset;
+        margin-right: 10px;
+        padding: 5px 30px;
+        border-radius: 15px;
+        background-color: $color-primary;
+        color:$default-white ;
+    }
+}
+
+
+
+
+
+

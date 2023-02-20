@@ -2,7 +2,7 @@ import "./fiche-logement.scss"
 import Carrousel from "../../components/Slideshow";
 import {useEffect, useState} from "react";
 import {useParams} from "react-router-dom";
-import TagName from "../../components/TAG";
+import HouseInfo from "../../components/House-info";
 
 
 function FicheLogement (){
@@ -28,7 +28,7 @@ function FicheLogement (){
     return(
         <div>
             <Carrousel house={house}/>
-            <TagName house={house}/>
+            <HouseInfo house={house}/>
         </div>
     )
 }
