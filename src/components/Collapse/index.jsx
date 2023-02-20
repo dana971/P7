@@ -4,7 +4,7 @@ import arrow from "../../assets/images/arrow.svg"
 
 
 
-function Collapse({fiabilite}){
+function Collapse({data}){
 
     const [open, setOpen ] = useState(false);
     const handleOpen = () => {
@@ -15,12 +15,12 @@ function Collapse({fiabilite}){
 
     <div className="dropdown-body">
         <div className="dropdown-head" onClick={handleOpen}>
-            <button className="dropdown-btn" >Title</button>
+            <button className="dropdown-btn">Title</button>
             <img src={arrow}/>
         </div>
         {
         open ?
-            <div className="is-open">{fiabilite}</div>
+            <div className="is-open">{data}</div>
         :
             <div className="is-close"></div> }
     </div>
