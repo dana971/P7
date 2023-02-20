@@ -11,16 +11,9 @@
 .dropdown-container{
     margin: 0 100px;
 
-    .dropdown-body , .dropdown-long {
-        width: 100%;
-    }
-    .dropdown-body {
-        //
-    }
+    border-radius:5px ;
+    padding: 8px 20px;
 
-    .dropdown-long {
-        all:unset;
 
-    }
 }
 
