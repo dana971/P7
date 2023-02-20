@@ -1,5 +1,6 @@
 import {useEffect, useState} from "react";
 import "./card.scss";
+import {Link} from "react-router-dom";
 
 function DisplayHouse (){
 
@@ -21,12 +22,12 @@ function DisplayHouse (){
     return(
         <div className="card-container">
             {houses.map((house) =>(
-                <div className="card">
+                <Link to={`/fiche-logement/${house.id}`} className="card">
                     <div className="card-image">
                     <img src={house.cover} alt="design KasaRose" />
                     </div>
                     <span>{house.title}</span>
-                </div>)
+                </Link>)
             )}
 
         </div>

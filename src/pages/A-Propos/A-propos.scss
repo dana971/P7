@@ -1,4 +1,4 @@
-@import "./src/utils/variables";
+@import "./src/utils/variables.scss";
 
 .banner-about{
     object-fit: cover;
@@ -7,3 +7,20 @@
     border-radius: 25px;
     margin: 70px 0 43px 0;
 }
+
+.dropdown-container{
+    margin: 0 100px;
+
+    .dropdown-body , .dropdown-long {
+        width: 100%;
+    }
+    .dropdown-body {
+        //
+    }
+
+    .dropdown-long {
+        all:unset;
+
+    }
+}
+

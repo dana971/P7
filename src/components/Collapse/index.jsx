@@ -1,6 +1,6 @@
-import "./dropdown.scss"
+import "./collapse.scss"
 import {useState} from "react";
-function Dropdown(){
+function Collapse(){
 
     const [open, setOpen ] = useState(false);
     const handleOpen = () => {
@@ -9,15 +9,17 @@ function Dropdown(){
 
     return(
 
-    <div>
+    <div className="dropdown-body">
         <button className="dropdown-long" onClick={handleOpen}>Title</button>
-        {open ?
+        {
+        open ?
             <div className="is-open">Les annonces postées sur Kasa garantissent une fiabilité totale.
                 Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes.</div>
-        : <div className="is-close"></div> }
-
+        :
+            <div className="is-close"></div> }
     </div>
-/*
+
+        /*
         <select className="dropdown-long">
             <option>La bienveillance fait partie des valeurs fondatrices de Kasa.
                 Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme.</option>
@@ -37,4 +39,4 @@ function Dropdown(){
 
     )
 }
-export default Dropdown
+export default Collapse
