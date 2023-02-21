@@ -37,7 +37,7 @@ function FicheLogement (){
                 />
 
                 <Collapse
-                    title={"Equipements"}
+                    title={"Equipement"}
                     liste={house.equipments}
                 />
             </div>

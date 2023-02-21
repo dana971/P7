@@ -4,18 +4,30 @@ import rightChevron from "../../assets/images/chevron-right.svg"
 
 function Slideshow({house}){
 
+ export const carouselItem =({children,width}) => {
+       return (
+           <div className="carousel-item">
+             <img src="./../assets/images/img-vallee.png"/>
+               {children}
+           </div>
+       );
+   };
 
+ Slideshow = ({children}) => {
 
     return(
-        <div className="carroussel-container">
-            <img src={leftChevron} className="left-chevron" alt="chevron gauche" />
-            <img src={rightChevron} className="right-chevron" alt="chevron droite" />
-            <div className="carrousel-box">
-                <img src={house.cover} className="carroussel-img" alt="Illustration d'une falaise"/>
+        <div className="carousel-container">
+            <div className="carousel-box">
+                {React.Children.map(children, (child, index)=>{
+                    return React.cloneElement(child);
+                })}
+
             </div>
         </div>
 
     )
+}
+
 }
 
 export default Slideshow

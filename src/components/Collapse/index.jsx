@@ -18,9 +18,9 @@ function Collapse({title ,description, liste}){
         <div className="dropdown-head" onClick={handleOpen} >
             <button className="dropdown-btn" >{title}</button>
             {open ?
-                <img src={arrow}  className="arrow-open" />
+                <img src={arrow}  className="arrow-open" alt="chevron vers le bas"/>
             :
-                <img src={arrow}  className="arrow" />}
+                <img src={arrow}  className="arrow" alt="chevron vers le haut"/>}
         </div>
 
         {open ?
