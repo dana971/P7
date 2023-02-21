@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router,Route, Routes } from "react-router-dom";
 import Home from './pages/Home';
 import FicheLogement from "./pages/Fiche-Logement";
@@ -13,7 +13,7 @@ import "./assets/fonts/Montserrat-Regular.ttf";
 
 
 
-ReactDOM.render(
+ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Router>
         <div className="body-wrapper">
@@ -27,8 +27,7 @@ ReactDOM.render(
         </div>
         <Footer />
     </Router>
-  </React.StrictMode>,
-   document.getElementById('root')
+  </React.StrictMode>
 )
 
 

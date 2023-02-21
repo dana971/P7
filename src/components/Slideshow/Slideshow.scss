@@ -1,18 +1,33 @@
-@import "./src/utils/variables.scss";
+@import "../../utils/variables.scss";
 
 .carousel-container{
     padding-top: 25px;
+    overflow: hidden;
 }
 
 .carousel-box {
-    display: flex;
-    justify-content: center;
     height: 415px;
-    width: 100%;
+    white-space: nowrap;
+    transition: transform 0.3s;
 }
 
 .carrousel-box img {
     border-radius: 25px;
     width: 100%;
     object-fit: cover;
+}
+
+.carrousel-item {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.indicators{
+    display: flex;
+    justify-content: center;
+
+   & button{
+       margin: 5px;
+   }
 }

@@ -3,7 +3,7 @@ import {useEffect, useState} from "react";
 import {useParams} from "react-router-dom";
 import HouseInfo from "../../components/House-info";
 import Collapse from "../../components/Collapse";
-import Slideshow from "../../components/Slideshow";
+import Slideshow, {CarouselItem} from "../../components/Slideshow";
 
 
 function FicheLogement (){
@@ -24,11 +24,22 @@ function FicheLogement (){
                 })
                 .catch((error) => console.log(error))
         },
-        []);
+        [id]);
 
     return(
         <div>
-            <Slideshow house={house}/>
+            {/*<Slideshow house={house}/>*/}
+            <Slideshow>
+
+                {house.pictures?.map((picture, index) => (
+
+                <CarouselItem
+                    key={index}
+                    picture={picture}>
+                </CarouselItem>
+                ))}
+
+            </Slideshow>
             <HouseInfo house={house}/>
             <div className="dropdown-container-short">
                 <Collapse

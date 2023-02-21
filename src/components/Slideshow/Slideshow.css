@@ -1,17 +1,32 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 1 | @import "./src/utils/variables.scss";
- *   |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
- *   '
- *   Slideshow.scss 1:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 1 \2502  @import \"./src/utils/variables.scss\";\d\a   \2502          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   Slideshow.scss 1:9  root stylesheet";
+.carousel-container {
+  padding-top: 25px;
+  overflow: hidden;
 }
+
+.carousel-box {
+  height: 415px;
+  white-space: nowrap;
+  transition: transform 0.3s;
+}
+
+.carrousel-box img {
+  border-radius: 25px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.carrousel-item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.indicators {
+  display: flex;
+  justify-content: center;
+}
+.indicators button {
+  margin: 5px;
+}
+
+/*# sourceMappingURL=Slideshow.css.map */

@@ -21,8 +21,8 @@ function DisplayHouse (){
 
     return(
         <div className="card-container">
-            {houses.map((house) =>(
-                <Link to={`/fiche-logement/${house.id}`} className="card">
+            {houses.map((house,index) =>(
+                <Link key={index} to={`/fiche-logement/${house.id}`} className="card">
                     <div className="card-image">
                     <img src={house.cover} alt="design KasaRose" />
                     </div>
