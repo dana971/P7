@@ -1,9 +1,9 @@
 import "./fiche-logement.scss"
-import Carrousel from "../../components/Slideshow";
 import {useEffect, useState} from "react";
 import {useParams} from "react-router-dom";
 import HouseInfo from "../../components/House-info";
 import Collapse from "../../components/Collapse";
+import Slideshow from "../../components/Slideshow";
 
 
 function FicheLogement (){
@@ -28,7 +28,7 @@ function FicheLogement (){
 
     return(
         <div>
-            <Carrousel house={house}/>
+            <Slideshow house={house}/>
             <HouseInfo house={house}/>
             <div className="dropdown-container-short">
                 <Collapse

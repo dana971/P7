@@ -11,15 +11,19 @@ function Collapse({title ,description, liste}){
         setOpen(!open);
     };
 
+
     return(
 
     <div className="dropdown-body">
-        <div className="dropdown-head" onClick={handleOpen}>
-            <button className="dropdown-btn">{title}</button>
-            <img src={arrow}  />
-        </div> 
-        {
-        open ?
+        <div className="dropdown-head" onClick={handleOpen} >
+            <button className="dropdown-btn" >{title}</button>
+            {open ?
+                <img src={arrow}  className="arrow-open" />
+            :
+                <img src={arrow}  className="arrow" />}
+        </div>
+
+        {open ?
             <div className="is-open">
             {description} 
             {liste && liste.map((item) => {

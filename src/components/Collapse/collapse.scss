@@ -29,4 +29,14 @@
     color:$color-primary ;
     border-radius: 0 0 5px 5px;
     padding: 25px 15px 15px;
+
+}
+
+.dropdown-head .arrow {
+    transition: transform 300ms ease-in-out;
+}
+
+.dropdown-head .arrow-open {
+    transition: transform 300ms ease-in-out;
+    transform: rotate(180deg)
 }
