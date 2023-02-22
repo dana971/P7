@@ -1,13 +1,13 @@
 import "./Slideshow.scss";
 import React, {useState} from "react";
-import leftChevron from "../../assets/images/chevron-left.svg"
-import rightChevron from "../../assets/images/chevron-right.svg"
+import prevButton from "../../assets/images/chevron-left.svg"
+import nextButton from "../../assets/images/chevron-right.svg"
 
 //function Slideshow({house}){
 
 export const CarouselItem =({picture, width}) => {
     return (
-       <div className="carousel-item" style={{width}}>
+       <div className="carousel-item" >
            <img src={picture} alt="" className="carousel-img"/>
        </div>
     );
@@ -22,31 +22,27 @@ const Slideshow = ({children}) => {
         if (newIndex < 0) {
             newIndex = 0;
         } else if (newIndex >= React.Children.count(children)){
-             newIndex = React.Children.count(children)-1;
+            newIndex = React.Children.count(children)-1;
         }
+        console.log(React.Children.count(children));
         setIsActive(newIndex);
     }
 
     return(
         <div className="carousel-container">
             <div className="carousel-box"
-                 style={{transform: `translateX(-${isActive * 100}%)`}}
-            >
+                 style={{transform: `translateX(-${isActive * 100}%)`}} >
+
                 {React.Children.map(children, (child, index) => {
-                    return React.cloneElement(child, {width: "100%" });
+                    return React.cloneElement(child);
                 })}
+
             </div>
             <div className="indicators">
-                <button className="prev"
-                        onClick={() => { updateIndex(isActive-1);
-                        }}>
-                Précédent
-                </button>
-                <button className="next"
-                        onClick={() => { updateIndex(isActive+1);
-                }}>
-                Suivant
-                </button>
+                <img src={prevButton} alt="image précédente" className="previous-slide"
+                     onClick={() => { updateIndex(isActive-1); }} />
+                <img src={nextButton} alt="image suivante" className="next-slide"
+                     onClick={() => { updateIndex(isActive+1); }}/>
             </div>
         </div>
 

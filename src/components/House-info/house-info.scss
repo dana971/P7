@@ -7,6 +7,9 @@
 
 .house-info-subtitle , .house-info-host-name{
     font-size: 18px;
+    @include tablet {
+        font-size: 14px;
+    }
 }
 
 .house-info-container{
@@ -19,9 +22,19 @@
     }
 }
 
+.house-info-title{
+    font-size: 36px;
+    @include tablet  {
+        font-size: 20px;
+    }
+}
+
 .host-picture{
     border-radius: 70px ;
     height: 100px;
+    @include tablet {
+        height: 70px;
+    }
 }
 
 .house-info-host{

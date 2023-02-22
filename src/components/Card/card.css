@@ -14,6 +14,7 @@
     justify-content: center;
     row-gap: 20px;
     flex-direction: column;
+    background-color: transparent;
   }
 }
 .card-container .card {
@@ -26,7 +27,7 @@
 @media all and (max-width: 768px) {
   .card-container .card {
     width: unset;
-    aspect-ratio: 0/1;
+    height: 255px;
   }
 }
 .card-container .card .card-image {

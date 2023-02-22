@@ -5,7 +5,9 @@ function Nav (){
 
     return(
         <nav>
-            <img src={logoKasa} alt="logo de l'enseigne kasa"/>
+            <Link to="/" >
+               <img src={logoKasa} alt="logo de l'enseigne kasa"/>
+            </Link>
             <div className="nav-buttons">
                 <Link to="/" > Accueil</Link>
                 <Link to="/about"> A propos</Link>
