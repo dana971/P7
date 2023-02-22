@@ -6,10 +6,23 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @include tablet{
+        font-size: 14px;
+    }
+
+    & img{
+        @include tablet{
+            height:40px ;
+        }
+    }
 
     & .nav-buttons{
         display: flex;
         gap: 55px;
+
+        @include tablet{
+        gap:10px;
+        }
 
         & a {
             color: $color-primary;

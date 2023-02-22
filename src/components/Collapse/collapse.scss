@@ -5,6 +5,9 @@
     width: 100%;
     border-radius: 0 0 5px 5px;
     margin-bottom: 20px;
+    @include tablet{
+        margin-bottom: 25px;
+    }
 }
 .dropdown-head {
     font-size: 24px;
@@ -13,6 +16,10 @@
     justify-content: space-between;
     padding: 5px 15px;
     border-radius: 5px;
+    @include tablet{
+        font-size: 13px;
+        padding: 13px 10px;
+    }
 
     & .dropdown-btn {
         border-radius:5px;
@@ -29,6 +36,13 @@
     color:$color-primary ;
     border-radius: 0 0 5px 5px;
     padding: 25px 15px 15px;
+    line-height: 28px;
+
+    & .equipement {
+        margin: 0px;
+        padding: 0px;
+        line-height: 20px;
+    }
 
 }
 

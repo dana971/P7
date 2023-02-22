@@ -4,9 +4,24 @@ nav {
   align-items: center;
   justify-content: space-between;
 }
+@media all and (max-width: 992px) {
+  nav {
+    font-size: 14px;
+  }
+}
+@media all and (max-width: 992px) {
+  nav img {
+    height: 40px;
+  }
+}
 nav .nav-buttons {
   display: flex;
   gap: 55px;
+}
+@media all and (max-width: 992px) {
+  nav .nav-buttons {
+    gap: 10px;
+  }
 }
 nav .nav-buttons a {
   color: #FF6060;

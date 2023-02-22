@@ -1,4 +1,5 @@
 //Global style
+@import "../utils/variables.scss";
 
 @font-face {
     font-family: "Montserrat";
@@ -6,24 +7,38 @@
     url("../assets/fonts/Montserrat-Regular.ttf") format("truetype");
 }
 
+
+
 html,body{
     height: 100%;
 }
 
 body{
-    margin :0 auto;
-    max-width: 1440px;
+    //margin :0 auto;
     font-family: Montserrat, serif;
-    padding: 0 50px;
+    width: 100%;
+    box-sizing: border-box;
+    @include tablet{
+        padding: 0;
+        margin: 20px auto 0 auto;
+    }
 
     div#root {
         height: 100%;
         display: flex;
         flex-direction: column;
+        max-width: 1440px;
+        margin: 0 auto;
+        @include tablet{
+
+        }
 
         div.body-wrapper {
             flex: 1 0 auto;
-            margin-top: 40px;
+
+        @include tablet{
+            padding: 0 20px;
+        }
         }
     }
 

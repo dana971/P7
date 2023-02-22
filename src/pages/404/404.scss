@@ -11,11 +11,20 @@
     & .error-img{
         max-width: 700px;
         margin-bottom: 70px;
+
+        @include tablet{
+            max-width: 198px;
+        }
     }
+
+
 
     & .error-msg{
         font-size: 30px;
         margin-bottom: 150px;
+    }
+    @include mobile{
+        text-align: center;
     }
 
     & .switch-link{

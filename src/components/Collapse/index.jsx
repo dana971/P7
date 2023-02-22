@@ -28,7 +28,7 @@ function Collapse({title ,description, liste}){
             {description} 
             {liste && liste.map((item) => {
             return (
-                <p>
+                <p className="equipement">
                     {item}
                 </p>
             )}   
