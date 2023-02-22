@@ -3,6 +3,11 @@
 .carousel-container{
     padding-top: 25px;
     overflow: hidden;
+
+    @include tablet{
+        height: 255px;
+        white-space: nowrap;
+    }
 }
 
 .carousel-box {

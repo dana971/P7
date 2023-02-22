@@ -3,5 +3,9 @@
 .dropdown-container-short{
     display: flex;
     gap: 80px;
+    @include tablet{
+        flex-direction: column;
+        gap:20px;
+    }
 
 }

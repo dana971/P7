@@ -8,7 +8,7 @@ import rightChevron from "../../assets/images/chevron-right.svg"
 export const CarouselItem =({picture, width}) => {
     return (
        <div className="carousel-item" style={{width}}>
-           <img src={picture} alt=""/>
+           <img src={picture} alt="" className="carousel-img"/>
        </div>
     );
 };
