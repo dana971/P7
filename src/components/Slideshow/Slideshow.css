@@ -12,12 +12,19 @@
 .carousel-container .carousel-box {
   white-space: nowrap;
   transition: transform 0.3s;
+  height: 415px;
+}
+@media all and (max-width: 992px) {
+  .carousel-container .carousel-box {
+    height: 255px;
+  }
 }
 .carousel-container .carousel-box .carousel-item {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   width: 100%;
+  height: 100%;
 }
 @media all and (max-width: 992px) {
   .carousel-container .carousel-box .carousel-item {
@@ -28,8 +35,8 @@
 .carousel-container .carousel-box .carousel-item .carousel-img {
   object-fit: cover;
   width: 100%;
-  height: 413px;
   border-radius: 25px;
+  height: 100%;
 }
 .carousel-container .indicators {
   width: 100%;
