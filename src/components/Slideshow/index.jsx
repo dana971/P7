@@ -3,12 +3,12 @@ import React, {useState} from "react";
 import prevButton from "../../assets/images/chevron-left.svg"
 import nextButton from "../../assets/images/chevron-right.svg"
 
-//function Slideshow({house}){
+
 
 export const CarouselItem =({picture, width}) => {
     return (
        <div className="carousel-item" >
-           <img src={picture} alt="" className="carousel-img"/>
+           <img src={picture} alt="présentation de l'appartement" className="carousel-img"/>
        </div>
     );
 };
@@ -19,12 +19,12 @@ const Slideshow = ({children}) => {
 
     const updateIndex = (newIndex) => {
 
+
         if (newIndex < 0) {
-            newIndex = 0;
+            newIndex = React.Children.count(children) -1 ;
         } else if (newIndex >= React.Children.count(children)){
-            newIndex = React.Children.count(children)-1;
+            newIndex = 0;
         }
-        console.log(React.Children.count(children));
         setIsActive(newIndex);
     }
 
@@ -38,14 +38,18 @@ const Slideshow = ({children}) => {
                 })}
 
             </div>
+            
             <div className="indicators">
                 <img src={prevButton} alt="image précédente" className="previous-slide"
                      onClick={() => { updateIndex(isActive-1); }} />
                 <img src={nextButton} alt="image suivante" className="next-slide"
                      onClick={() => { updateIndex(isActive+1); }}/>
             </div>
-        </div>
+            <div className="current-index">
+                <span>{isActive+1}/{React.Children.count(children)}</span>
+            </div>
 
+        </div>
     );
 };
 

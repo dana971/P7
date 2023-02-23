@@ -7,11 +7,17 @@ nav {
 @media all and (max-width: 992px) {
   nav {
     font-size: 14px;
+    text-transform: uppercase;
   }
 }
 @media all and (max-width: 992px) {
   nav img {
     height: 40px;
+  }
+}
+@media all and (max-width: 768px) {
+  nav img {
+    height: 29px;
   }
 }
 nav .nav-buttons {

@@ -1,26 +1,34 @@
 import "./fiche-logement.scss"
 import {useEffect, useState} from "react";
-import {useParams} from "react-router-dom";
+import {useParams, redirect} from "react-router-dom";
 import HouseInfo from "../../components/House-info";
 import Collapse from "../../components/Collapse";
 import Slideshow, {CarouselItem} from "../../components/Slideshow";
+import {useNavigate} from "react-router-dom";
 
 
 function FicheLogement (){
 
     const [house, setHouse] = useState([]);
     let {id} = useParams();
-
+    const navigate = useNavigate();
 
     useEffect(() => {
             fetch(`/logements.json`)
                 .then((res) => res.json())
                 .then((houseData) => {
-                    houseData.map((house) => {
+                    let houseFinded = false;
+                    houseData.map((house, i, array) => {
+                        console.log(i+" index");
+                        console.log(array);
                         if(house.id === id) {
+                            houseFinded = true;
                             setHouse(house);
                         }
                     })
+                    if (houseFinded === false) {
+                        return navigate("*");
+                    }
                 })
                 .catch((error) => console.log(error))
         },

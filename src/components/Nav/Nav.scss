@@ -8,11 +8,16 @@ nav {
     justify-content: space-between;
     @include tablet{
         font-size: 14px;
+        text-transform: uppercase;
     }
 
     & img{
         @include tablet{
             height:40px ;
+        }
+
+        @include mobile{
+            height: 29px;
         }
     }
 
