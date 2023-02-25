@@ -25,15 +25,15 @@
         border-radius: 10px;
         position: relative;
         z-index: 0;
+        background-color:$color-primary;
 
         @include mobile {
             width: unset;
-            height:255px;
+            height:290px;
         }
 
         & .card-image {
             height:100%;
-            background-color:$color-primary;
             background: $gradient-background;
             border-radius: 10px;
 
@@ -54,7 +54,8 @@
             left: 20px;
             z-index: 5;
             color: $default-white ;
-            width: 210px;
+            width: 50%;
+            font-size: 18px;
 
         }
 

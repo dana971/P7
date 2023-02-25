@@ -17,7 +17,7 @@ nav {
 }
 @media all and (max-width: 768px) {
   nav img {
-    height: 29px;
+    height: 32px;
   }
 }
 nav .nav-buttons {

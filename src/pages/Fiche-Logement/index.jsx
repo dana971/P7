@@ -1,6 +1,6 @@
 import "./fiche-logement.scss"
 import {useEffect, useState} from "react";
-import {useParams, redirect} from "react-router-dom";
+import {useParams} from "react-router-dom";
 import HouseInfo from "../../components/House-info";
 import Collapse from "../../components/Collapse";
 import Slideshow, {CarouselItem} from "../../components/Slideshow";
@@ -18,9 +18,7 @@ function FicheLogement (){
                 .then((res) => res.json())
                 .then((houseData) => {
                     let houseFinded = false;
-                    houseData.map((house, i, array) => {
-                        console.log(i+" index");
-                        console.log(array);
+                    houseData.map((house) => {
                         if(house.id === id) {
                             houseFinded = true;
                             setHouse(house);
@@ -36,15 +34,14 @@ function FicheLogement (){
 
     return(
         <div>
-            {/*<Slideshow house={house}/>*/}
             <Slideshow>
 
                 {house.pictures?.map((picture, index) => (
 
-                <CarouselItem
-                    key={index}
-                    picture={picture}>
-                </CarouselItem>
+                    <CarouselItem
+                        key={index}
+                        picture={picture}>
+                    </CarouselItem>
                 ))}
 
             </Slideshow>

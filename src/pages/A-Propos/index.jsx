@@ -15,8 +15,8 @@ function About (){
         <div>
             <img src={laVallee} className="banner-about" alt="Illustration d'une vallée enneigée"/>
             <div className="dropdown-container">
-                {aboutData?.map((data) =>(
-                    <Collapse  description={data.content} title={data.title} />
+                {aboutData?.map((data,index) =>(
+                    <Collapse key={index} description={data.content} title={data.title} />
                 ))}
             </div>
         </div>

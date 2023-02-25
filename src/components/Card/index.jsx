@@ -14,8 +14,7 @@ function DisplayHouse (){
                 setHouses(houseData)
             })
             .catch((error) => console.log(error))
-    },
-        []);
+    },[]);
 
 
 
@@ -24,7 +23,7 @@ function DisplayHouse (){
             {houses.map((house,index) =>(
                 <Link key={index} to={`/fiche-logement/${house.id}`} className="card">
                     <div className="card-image">
-                    <img src={house.cover} alt="design KasaRose" />
+                    <img src={house.cover} alt="Présentation de l'appartement" />
                     </div>
                     <span>{house.title}</span>
                 </Link>)

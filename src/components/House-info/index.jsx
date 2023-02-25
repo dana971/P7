@@ -3,7 +3,6 @@ import rating from "../../assets/images/star.svg"
 
 
 function HouseInfo ({house}){
-    console.log(house);
 
     const ratingNumbers = parseInt(house.rating)
     const tabNumbers= [1,2,3,4,5]
@@ -14,7 +13,7 @@ function HouseInfo ({house}){
 
             <div className="house-info-box">
                 <h1 className="house-info-title">{house.title}</h1>
-                <span className="house-info-subtitle">{house.location}</span>
+                <span className="house-info-address">{house.location}</span>
 
                 <ul className="tags-container">
                     {house.tags?.map((tag, index) => (
@@ -32,10 +31,10 @@ function HouseInfo ({house}){
                 </div>
 
                 <div className="rating">
-                    {tabNumbers.map(number=>{
+                    {tabNumbers.map((number, index) => {
                         const isOrange =  number <= ratingNumbers;
                         return (
-                            <img src={rating} className={isOrange ? "rating-orange" : "rating-grey"} alt="Note du logement"/>
+                            <img key={index} src={rating} className={isOrange ? "rating-orange" : "rating-grey"} alt="Note du logement"/>
                         )
                     })}
                 </div>

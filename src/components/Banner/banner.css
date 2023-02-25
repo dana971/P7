@@ -5,7 +5,7 @@
 }
 @media all and (max-width: 768px) {
   .banner-img {
-    margin: 28px 0 22px 0;
+    margin: 20px 0;
     height: 111px;
   }
 }
@@ -44,9 +44,11 @@
 }
 @media all and (max-width: 768px) {
   .banner-img h1 {
-    font-size: 19px;
+    font-size: 20px;
     text-align: inherit;
     margin: 30px 0;
+    width: 60%;
+    margin-left: 15px;
   }
 }
 

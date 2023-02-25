@@ -8,28 +8,26 @@ html, body {
 
 body {
   font-family: Montserrat, serif;
-  width: 100%;
   box-sizing: border-box;
-}
-@media all and (max-width: 992px) {
-  body {
-    padding: 0;
-    margin: 20px auto 0 auto;
-  }
+  margin: 40px 0 0 0;
 }
 body div#root {
   height: 100%;
   display: flex;
   flex-direction: column;
-  max-width: 1440px;
-  margin: 0 auto;
 }
 body div#root div.body-wrapper {
   flex: 1 0 auto;
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 100%;
 }
-@media all and (max-width: 992px) {
-  body div#root div.body-wrapper {
-    padding: 0 20px;
+body div#root div.body-wrapper > nav, body div#root div.body-wrapper > div {
+  padding: 0 20px;
+}
+@media all and (max-width: 768px) {
+  body div#root div.body-wrapper > nav, body div#root div.body-wrapper > div {
+    padding: 0 15px;
   }
 }
 

@@ -6,9 +6,9 @@ import nextButton from "../../assets/images/chevron-right.svg"
 
 
 
-export const CarouselItem =({picture, width}) => {
+export const CarouselItem =({picture, index}) => {
     return (
-       <div className="carousel-item" >
+       <div className="carousel-item" key={index}>
            <img src={picture} alt="présentation de l'appartement" className="carousel-img"/>
        </div>
     );

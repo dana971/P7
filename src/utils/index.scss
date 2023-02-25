@@ -16,29 +16,31 @@ html,body{
 body{
     //margin :0 auto;
     font-family: Montserrat, serif;
-    width: 100%;
     box-sizing: border-box;
-    @include tablet{
-        padding: 0;
-        margin: 20px auto 0 auto;
-    }
+    margin: 40px 0 0 0 ;
+
 
     div#root {
         height: 100%;
         display: flex;
         flex-direction: column;
-        max-width: 1440px;
-        margin: 0 auto;
         @include tablet{
 
         }
 
         div.body-wrapper {
             flex: 1 0 auto;
+            max-width: 1440px;
+            margin: 0 auto;
+            width: 100%;
 
-        @include tablet{
-            padding: 0 20px;
-        }
+            & > nav, & > div {
+                padding: 0 20px;
+
+                @include mobile{
+                    padding: 0 15px;
+                }
+            }
         }
     }
 

@@ -6,6 +6,10 @@
     width: 100%;
     border-radius: 25px;
     margin: 70px 0 43px 0;
+    @include mobile {
+        border-radius: 10px;
+        margin: 20px 0;
+    }
 }
 
 .dropdown-container{
