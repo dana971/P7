@@ -1,13 +1,24 @@
-import falaise from "../../assets/images/img-falaise.png"
 import "./banner.scss";
 
-function Banner(){
+/**
+ * Composant renvoyant le Banner
+ * @return {JSX.Element}
+ * @constructor
+ */
+function Banner({picture, alt, className="", title=""}){
+
     return(
-    <div className="banner-img">
+    <div className={"banner-img " + className}>
         <div className="banner-box">
-            <img src={falaise} alt="Illustration d'une falaise"/>
+            <img src={picture} alt={alt}/>
         </div>
-        <h1 className="banner-title">Chez vous, partout et ailleurs</h1>
+
+        {title === "" ?
+            <div></div>
+        :
+            <h1 className="banner-title">{title}</h1>
+        }
+
     </div>
 
     )

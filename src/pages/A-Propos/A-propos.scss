@@ -1,14 +1,9 @@
 @import "./src/utils/variables.scss";
 
-.banner-about{
-    object-fit: cover;
+.about-img {
     height: 223px;
-    width: 100%;
-    border-radius: 25px;
-    margin: 70px 0 43px 0;
-    @include mobile {
-        border-radius: 10px;
-        margin: 20px 0;
+    & .banner-box, .banner-box img {
+        height: 100%;
     }
 }
 

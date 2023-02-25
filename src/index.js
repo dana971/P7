@@ -12,8 +12,7 @@ import "./assets/fonts/Montserrat-Regular.ttf";
 
 
 
-
-
+//contient les éléments communs à toutes les pages et la logique de routing
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Router>

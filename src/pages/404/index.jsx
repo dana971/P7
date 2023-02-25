@@ -2,7 +2,11 @@ import errorPicture from "../../assets/images/404.svg"
 import "./404.scss"
 import {Link} from "react-router-dom";
 
-
+/**
+ * Page d'erreur 404
+ * @return {JSX.Element}
+ * @constructor
+ */
 function Error404 (){
 
     return(

@@ -1,7 +1,13 @@
 import "./A-propos.scss"
 import laVallee from "../../assets/images/img-vallee.png"
 import Collapse from "../../components/Collapse"
+import Banner from "../../components/Banner";
 
+/**
+ * Page About
+ * @return {JSX.Element}
+ * @constructor
+ */
 function About (){
 
      let aboutData = [
@@ -13,10 +19,20 @@ function About (){
 
     return(
         <div>
-            <img src={laVallee} className="banner-about" alt="Illustration d'une vallée enneigée"/>
+            <Banner className="about-img"
+                picture={laVallee}
+                alt="Illustration d'une vallée enneigée"
+
+            />
+
             <div className="dropdown-container">
                 {aboutData?.map((data,index) =>(
-                    <Collapse key={index} description={data.content} title={data.title} />
+
+                    <Collapse
+                        key={index}
+                        title={data.title}
+                        description={data.content}
+                    />
                 ))}
             </div>
         </div>

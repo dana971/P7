@@ -3,7 +3,14 @@ import {useState} from "react";
 import arrow from "../../assets/images/arrow.svg"
 
 
-
+/**
+ * Composant dynamique dropdown
+ * @param title
+ * @param description
+ * @param liste
+ * @return {JSX.Element}
+ * @constructor
+ */
 function Collapse({title ,description, liste}){
 
     const [open, setOpen ] = useState(false);
@@ -25,14 +32,15 @@ function Collapse({title ,description, liste}){
 
         {open ?
             <div className="is-open">
-            {description} 
-            {liste && liste.map((item) => {
-            return (
-                <p className="equipement">
-                    {item}
-                </p>
-            )}   
-        )}
+                {description}
+                {/* On évalue s'il y a une liste  */}
+                {liste && liste.map((item, index) => {
+                return (
+                    <p className="equipement" key={index}>
+                        {item}
+                    </p>
+                )}
+            )}
             
             </div>
         :

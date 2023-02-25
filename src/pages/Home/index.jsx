@@ -1,6 +1,7 @@
 import Banner from "../../components/Banner";
 import Card from "../../components/Card";
 import React, {useEffect, useState} from "react";
+import falaise from "../../assets/images/img-falaise.png"
 
 
 /**
@@ -26,7 +27,10 @@ function Home (){
 
     return(
         <div>
-            <Banner />
+            <Banner
+                picture={falaise}
+                alt="Illustration d'une falaise"
+                title="Chez vous, partout et ailleurs"/>
             <div className="card-container">
             {houses.map((house, index) =>(
                 <Card house={house} key={index} />

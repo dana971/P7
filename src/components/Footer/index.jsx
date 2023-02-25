@@ -1,8 +1,11 @@
-
 import whiteLogo from "../../assets/images/logo-white.png"
 import  "./footer.scss"
 
-
+/**
+ * Footer de l'application
+ * @return {JSX.Element}
+ * @constructor
+ */
 function Footer (){
 
     return(

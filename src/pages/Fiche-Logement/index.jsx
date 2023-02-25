@@ -3,20 +3,28 @@ import {useEffect, useState} from "react";
 import {useParams} from "react-router-dom";
 import HouseInfo from "../../components/House-info";
 import Collapse from "../../components/Collapse";
-import Slideshow, {CarouselItem} from "../../components/Slideshow";
+import Slideshow, {SlideshowItem} from "../../components/Slideshow";
 import {useNavigate} from "react-router-dom";
 
 
+/**
+ *  Page fiche-logement
+ *  Fetch du Fichier Json
+ * @return {JSX.Element}
+ * @constructor
+ */
 function FicheLogement (){
 
     const [house, setHouse] = useState([]);
     let {id} = useParams();
     const navigate = useNavigate();
 
+    // Fetch du contenu de notre fichier Json grace au hook useEffect
     useEffect(() => {
             fetch(`/logements.json`)
                 .then((res) => res.json())
                 .then((houseData) => {
+                    // permet de vérifier qu'une house a bien été trouvée
                     let houseFinded = false;
                     houseData.map((house) => {
                         if(house.id === id) {
@@ -24,6 +32,7 @@ function FicheLogement (){
                             setHouse(house);
                         }
                     })
+                    // si aucune house n'a été trouvée / on renvoie vers la page Error
                     if (houseFinded === false) {
                         return navigate("*");
                     }
@@ -35,16 +44,14 @@ function FicheLogement (){
     return(
         <div>
             <Slideshow>
-
                 {house.pictures?.map((picture, index) => (
-
-                    <CarouselItem
+                    <SlideshowItem
                         key={index}
-                        picture={picture}>
-                    </CarouselItem>
+                        picture={picture}
+                    />
                 ))}
-
             </Slideshow>
+
             <HouseInfo house={house}/>
             <div className="dropdown-container-short">
                 <Collapse
