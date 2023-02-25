@@ -79,6 +79,9 @@ ul.tags-container{
 
 .rating-orange{
     filter: brightness(0) saturate(100%) invert(53%) sepia(55%) saturate(4719%) hue-rotate(329deg) brightness(117%) contrast(103%);
+    @include mobile{
+       height: 20px;
+    }
 }
 
 
