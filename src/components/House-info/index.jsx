@@ -1,4 +1,4 @@
-import "./house-info.scss"
+import "./house-info.css"
 import rating from "../../assets/images/star.svg"
 
 

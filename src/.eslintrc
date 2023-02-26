@@ -1,4 +1,6 @@
 {
   "extends":["react-app"],
-  "rules": {}
+  "rules": {
+    // eslint-disable-next-line
+  }
 }

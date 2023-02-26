@@ -1,5 +1,5 @@
 import whiteLogo from "../../assets/images/logo-white.png"
-import  "./footer.scss"
+import  "./footer.css"
 
 /**
  * Footer de l'application

@@ -13,7 +13,7 @@
     .carousel-box {
         white-space: nowrap;
         transition: transform 0.3s;
-        height: 415px;
+        height: 440px;
         @include tablet{
             height: 255px;
         }
@@ -39,17 +39,22 @@
         }
     }
 
-    .indicators{
+    .actions-box{
+        position:absolute;
+        bottom:0;
+        width: 100%;
+        height:100%;
+    }
+
+    .actions-btn{
         width: 100%;
         height: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        position: absolute;
-        bottom: 0;
 
         & img{
-            height: 80px;
+            height: 75px;
             cursor: pointer;
             @include mobile{
                 height: 30px;
@@ -74,9 +79,10 @@
 .current-index{
     display: flex;
     justify-content: center;
-    position: relative;
-    bottom: 40px;
+    position: absolute;
+    bottom: 15px;
     font-size: 21px;
     color: $default-white;
     font-weight: 900;
+    width: 100%;
 }

@@ -1,4 +1,4 @@
-import "./fiche-logement.scss"
+import "./fiche-logement.css"
 import {useEffect, useState} from "react";
 import {useParams} from "react-router-dom";
 import HouseInfo from "../../components/House-info";
@@ -26,6 +26,7 @@ function FicheLogement (){
                 .then((houseData) => {
                     // permet de vérifier qu'une house a bien été trouvée
                     let houseFinded = false;
+                    // eslint-disable-next-line array-callback-return
                     houseData.map((house) => {
                         if(house.id === id) {
                             houseFinded = true;
@@ -39,7 +40,7 @@ function FicheLogement (){
                 })
                 .catch((error) => console.log(error))
         },
-        [id]);
+        [id,navigate]);
 
     return(
         <div>

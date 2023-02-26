@@ -7,7 +7,7 @@ import About from "./pages/A-Propos";
 import Error404 from "./pages/404";
 import Nav from "./components/Nav/Nav";
 import Footer from "./components/Footer";
-import "../src/utils/index.scss";
+import "../src/utils/index.css";
 import "./assets/fonts/Montserrat-Regular.ttf";
 
 

@@ -33,7 +33,7 @@ nav .nav-buttons a {
   color: #FF6060;
   text-decoration: none;
 }
-nav .nav-buttons a:hover {
+nav .nav-buttons a:active {
   text-decoration: underline;
 }
 

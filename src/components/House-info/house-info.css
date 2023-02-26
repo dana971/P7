@@ -1,17 +1,123 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 1 | @import "./src/utils/variables.scss";
- *   |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
- *   '
- *   house-info.scss 1:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 1 \2502  @import \"./src/utils/variables.scss\";\d\a   \2502          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   house-info.scss 1:9  root stylesheet";
+.house-info-title, .house-info-address, .house-info-host-name {
+  color: #FF6060;
+  margin: 5px 0;
 }
+
+.house-info-address {
+  font-size: 18px;
+}
+@media all and (max-width: 992px) {
+  .house-info-address {
+    font-size: 16px;
+  }
+}
+
+.house-info-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+}
+@media all and (max-width: 992px) {
+  .house-info-container {
+    flex-direction: column;
+    justify-content: unset;
+  }
+}
+
+.house-info-title {
+  font-size: 36px;
+}
+@media all and (max-width: 992px) {
+  .house-info-title {
+    font-size: 20px;
+  }
+}
+
+.host-picture {
+  border-radius: 70px;
+  height: 80px;
+}
+@media all and (max-width: 992px) {
+  .host-picture {
+    height: 50px;
+  }
+}
+
+.house-info-host {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+@media all and (max-width: 992px) {
+  .house-info-host {
+    justify-content: space-between;
+    display: flex;
+    align-content: flex-end;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+}
+
+.house-info-host-box {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+  width: min-content;
+}
+
+.house-info-host-name {
+  line-height: 25px;
+  text-align: right;
+  font-size: 18px;
+}
+@media all and (max-width: 768px) {
+  .house-info-host-name {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+ul.tags-container {
+  display: flex;
+  padding: 0;
+  margin-top: 20px;
+}
+ul.tags-container li {
+  all: unset;
+  margin-right: 10px;
+  padding: 5px 30px;
+  border-radius: 15px;
+  background-color: #FF6060;
+  color: #FFFFFF;
+}
+@media all and (max-width: 992px) {
+  ul.tags-container li {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 11px;
+  }
+}
+
+.rating {
+  text-align: right;
+  margin-top: 15px;
+  width: 170px;
+  justify-content: space-between;
+  display: flex;
+}
+@media all and (max-width: 768px) {
+  .rating {
+    margin-top: 0;
+    width: 120px;
+  }
+}
+@media all and (max-width: 768px) {
+  .rating img {
+    height: 20px;
+  }
+}
+.rating .rating-orange {
+  filter: brightness(0) saturate(100%) invert(53%) sepia(55%) saturate(4719%) hue-rotate(329deg) brightness(117%) contrast(103%);
+}
+
+/*# sourceMappingURL=house-info.css.map */

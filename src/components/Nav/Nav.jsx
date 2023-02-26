@@ -1,6 +1,6 @@
 import {Link} from "react-router-dom";
 import logoKasa from "../../assets/images/logo.svg"
-import  "./Nav.scss"
+import  "./Nav.css"
 
 /**
  * Barre de navigation renvoyer vers les pages Accueil et A-propos

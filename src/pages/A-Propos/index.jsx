@@ -1,4 +1,4 @@
-import "./A-propos.scss"
+import "./A-propos.css"
 import laVallee from "../../assets/images/img-vallee.png"
 import Collapse from "../../components/Collapse"
 import Banner from "../../components/Banner";

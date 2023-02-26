@@ -1,5 +1,5 @@
 import errorPicture from "../../assets/images/404.svg"
-import "./404.scss"
+import "./404.css"
 import {Link} from "react-router-dom";
 
 /**
