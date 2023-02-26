@@ -1,4 +1,4 @@
-@import "./src/utils/variables.scss";
+@import "../../utils/variables.scss";
 
 .house-info-title, .house-info-address , .house-info-host-name {
     color:$color-primary;
@@ -40,7 +40,7 @@
 .house-info-host{
     display: flex;
     flex-direction: column;
-    align-items: end;
+    align-items: flex-end;
 
     @include tablet{
         justify-content: space-between;
@@ -61,7 +61,7 @@
 
 .house-info-host-name{
     line-height: 25px;
-    text-align: end;
+    text-align: right;
     font-size: 18px;
 
     @include mobile {
@@ -92,7 +92,7 @@ ul.tags-container{
 
 
 .rating{
-    text-align: end;
+    text-align: right;
     margin-top: 15px;
     width: 170px;
     justify-content: space-between;

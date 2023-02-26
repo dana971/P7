@@ -1,4 +1,4 @@
-import "./collapse.scss"
+import "./collapse.css"
 import {useState} from "react";
 import arrow from "../../assets/images/arrow.svg"
 

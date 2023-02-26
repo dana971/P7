@@ -1,4 +1,4 @@
-import "./Slideshow.scss";
+import "./Slideshow.css";
 import React, {useState} from "react";
 import prevButton from "../../assets/images/chevron-left.svg"
 import nextButton from "../../assets/images/chevron-right.svg"
@@ -45,7 +45,7 @@ const Slideshow = ({children}) => {
             <div className="carousel-box"
                  style={{transform: `translateX(-${isActive * 100}%)`}} >
 
-                {React.Children.map(children, (child, index) => {
+                {React.Children.map(children, (child) => {
                     return React.cloneElement(child);
                 })}
 
@@ -53,12 +53,12 @@ const Slideshow = ({children}) => {
 
             {/* Condition qui vérifie si on doit afficher les boutons d'actions ou pas */}
             {React.Children.count(children) > 1 ?
-            <div>
+            <div className="actions-box">
                 {/* Affichage des boutons d'actions */}
-                <div className="indicators">
-                    <img src={prevButton} alt="image précédente" className="previous-slide"
+                <div className="actions-btn">
+                    <img src={prevButton} alt="bouton précédent" className="previous-slide"
                          onClick={() => { updateIndex(isActive-1); }} />
-                    <img src={nextButton} alt="image suivante" className="next-slide"
+                    <img src={nextButton} alt="bouton suivant" className="next-slide"
                          onClick={() => { updateIndex(isActive+1); }}/>
                 </div>
                 {/* Affichage de l'indicateur dynamique */}

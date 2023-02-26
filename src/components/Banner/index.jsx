@@ -1,4 +1,4 @@
-import "./banner.scss";
+import "./banner.css"
 
 /**
  * Composant renvoyant le Banner
