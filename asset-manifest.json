@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/P7/static/css/main.94b80eab.css",
+    "main.js": "/P7/static/js/main.fb97e2ea.js",
+    "static/media/img-vallee.png": "/P7/static/media/img-vallee.abab3f12f4cb82f1dfa1.png",
+    "static/media/img-falaise.png": "/P7/static/media/img-falaise.d00ae7dd3ef927bb988d.png",
+    "static/media/Montserrat-Regular.ttf": "/P7/static/media/Montserrat-Regular.ceb11275ab638627a643.ttf",
+    "static/media/logo.svg": "/P7/static/media/logo.3e4c432d7ff1ee4ae1aacb51708ee0c1.svg",
+    "static/media/404.svg": "/P7/static/media/404.bda16ade0ddc790ae9442f4cd358bf19.svg",
+    "index.html": "/P7/index.html",
+    "static/media/arrow.svg": "/P7/static/media/arrow.6be86a8ff7772b42b056a30c2d82b448.svg",
+    "static/media/chevron-right.svg": "/P7/static/media/chevron-right.224e07798ade6bda6e2572adcd9fc9c3.svg",
+    "static/media/chevron-left.svg": "/P7/static/media/chevron-left.e1c831f025531aaa34d3eb308a748ce2.svg",
+    "static/media/star.svg": "/P7/static/media/star.06dccca447400012db124c595a41e219.svg",
+    "main.94b80eab.css.map": "/P7/static/css/main.94b80eab.css.map",
+    "main.fb97e2ea.js.map": "/P7/static/js/main.fb97e2ea.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.94b80eab.css",
+    "static/js/main.fb97e2ea.js"
+  ]
+}
