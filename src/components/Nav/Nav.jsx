@@ -11,12 +11,12 @@ function Nav (){
 
     return(
         <nav>
-            <Link to="/" >
+            <Link to={`${process.env.PUBLIC_URL}/`} >
                <img src={logoKasa} alt="logo de l'enseigne kasa"/>
             </Link>
             <div className="nav-buttons">
-                <Link to="/" > Accueil</Link>
-                <Link to="/about"> A propos</Link>
+                <Link to={`${process.env.PUBLIC_URL}/`}> Accueil</Link>
+                <Link to={`${process.env.PUBLIC_URL}/about`}> A propos</Link>
             </div>
         </nav>
     )

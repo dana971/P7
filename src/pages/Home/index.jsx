@@ -16,7 +16,7 @@ function Home (){
 
     //Fetch du contenu du fichier json grace au hook useEffect
     useEffect(() => {
-        fetch(`/logements.json`)
+        fetch(`${process.env.PUBLIC_URL}/logements.json`)
             .then((res) => res.json())
             .then((houseData) => {
                 setHouses(houseData)

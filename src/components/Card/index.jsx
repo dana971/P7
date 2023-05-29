@@ -10,7 +10,7 @@ import {Link} from "react-router-dom";
 function Card ({house, index}){
 
     return(
-        <Link key={index} to={`/fiche-logement/${house.id}`} className="card">
+        <Link key={index} to={`${process.env.PUBLIC_URL}/fiche-logement/${house.id}`} className="card">
             <div className="card-image">
             <img src={house.cover} alt="Présentation de l'appartement" />
             </div>

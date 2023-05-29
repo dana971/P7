@@ -21,7 +21,7 @@ function FicheLogement (){
 
     // Fetch du contenu de notre fichier Json grace au hook useEffect
     useEffect(() => {
-            fetch(`/logements.json`)
+            fetch(`${process.env.PUBLIC_URL}/logements.json`)
                 .then((res) => res.json())
                 .then((houseData) => {
                     // permet de vérifier qu'une house a bien été trouvée

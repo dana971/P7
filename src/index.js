@@ -19,9 +19,10 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <div className="body-wrapper">
             <Nav />
             <Routes>
-                < Route path="/" element={<Home />} />
-                < Route path="/fiche-logement/:id" element={<FicheLogement />} />
-                < Route path="/about" element={<About />} />
+                < Route path={`${process.env.PUBLIC_URL}`} element={<Home />} />
+                < Route path={`${process.env.PUBLIC_URL}/fiche-logement/:id`} element={<FicheLogement />} />
+                < Route path={`${process.env.PUBLIC_URL}/about`} element={<About />} />
+                < Route path={`${process.env.PUBLIC_URL}/*`} element={<Error404 />} />
                 < Route path="*" element={<Error404 />} />
             </Routes>
         </div>

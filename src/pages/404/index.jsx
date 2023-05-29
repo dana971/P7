@@ -13,7 +13,7 @@ function Error404 (){
         <div className="error-container">
             <img src={errorPicture} className="error-img" alt="Message d'erreur 404"/>
             <span className="error-msg">Oups ! La page que vous demandez n'existe pas !</span>
-            <Link to="/" className="switch-link">Retourner sur la page d'accueil</Link>
+            <Link to={`${process.env.PUBLIC_URL}/`} className="switch-link">Retourner sur la page d'accueil</Link>
         </div>
     )
 }
